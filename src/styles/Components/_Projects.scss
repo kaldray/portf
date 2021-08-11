@@ -1,0 +1,109 @@
+.main{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    .next{
+        position:absolute;
+        right: 10%;
+        background-color:$color4;
+        font-size:  1.5em;
+        padding: 5px;
+        font-family:'Source sans pro';
+        top: 50%;
+        margin: auto;
+        border-radius: 10%;
+        &:hover{
+            cursor: pointer;
+        }
+        @media screen and (max-width:768px) {
+            top:105%;
+        }
+
+    }
+    .previous{
+        position: absolute;
+        left: 10%;
+        background-color:$color4;
+        font-size:1.5em;
+        padding: 5px;
+        font-family:'Source sans pro';
+        top: 50%;
+        margin: auto;
+        border-radius: 10%;
+        &:hover{
+            cursor: pointer;
+        }
+        @media screen and (max-width:768px) {
+            top:105%;
+            margin-bottom:25px;
+        }
+        
+    }
+}
+
+.hide{
+    display: none !important;;
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    margin-top: 10vh;
+    width:60%;
+    // border: 5px dotted black;
+    font-family:'Source sans pro';
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: fade;
+    box-shadow: 1px 3px 10px 0px $color1 ;
+    animation-name: fade;
+    animation-duration: 1s;
+    @keyframes fade {
+        from { opacity: 0}
+        to { opacity: 1}
+        
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+    .slider-content {
+        height: 500px;
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    .title{
+        font-size: 3em;
+        font-weight: normal;
+        height: fit-content;
+    }
+    .date{
+        font-size: 1em;
+        font-weight: normal;
+        align-self:flex-end;
+    }
+    .languages{
+        font-size: 2em;
+        font-weight: normal;
+    }
+    .base{
+        margin-top: 15px;
+    }
+    .infos{
+        text-align: left;
+        animation-name: fade;
+        animation-duration: 1s;
+        @keyframes fade {
+            from { opacity : 0}
+            to { opacity : 1}
+        }
+        p{
+          font-size:2em;
+          font-weight: 400;
+        }
+      
+    }   
+}
