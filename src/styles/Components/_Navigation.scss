@@ -5,22 +5,34 @@ nav {
 .navigation {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: $color1;
+    min-height: 68.6px;
+    flex-direction: row;
+
     ul {
         display: flex;
         flex-direction: row;
     }
-    li {
-        margin: 10px;
+    .li {
+        margin: 15px;
         color: #ffffff;
         font-size:1.5em;
         font-family:'Source sans pro';
+        border-bottom: 3px solid transparent;
     }
     @media screen and (max-width: 768px) {
         overflow: hidden;
         position: fixed;
         bottom: 0;
+        z-index: 5;
         width: 100%;
+    }
+
+    .nav-active{
+        border-bottom: 3px solid $color4;
+        transition: margin-bottom 5s ease-in .5s;
     }
     
 }
+

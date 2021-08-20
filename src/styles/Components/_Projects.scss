@@ -1,7 +1,21 @@
+html,body{
+    min-height: 100vh;
+
+}
+
+body{
+    position: relative;
+    @media screen and (max-width:768px) {
+        margin-bottom: 68.6px;
+    }
+    
+}
 .main{
     display: flex;
     justify-content: center;
     position:relative;
+    animation-name: fade;
+    animation-duration: 1s;
     .next{
         position:absolute;
         right: 10%;
@@ -16,7 +30,8 @@
             cursor: pointer;
         }
         @media screen and (max-width:768px) {
-            top:105%;
+            top:110%;
+            right: 25%;
         }
 
     }
@@ -34,16 +49,13 @@
             cursor: pointer;
         }
         @media screen and (max-width:768px) {
-            top:105%;
-            margin-bottom:25px;
+            top: 110%;
+            left: 25%;
         }
         
     }
 }
 
-.hide{
-    display: none !important;;
-}
 
 .container{
     display: flex;
@@ -51,7 +63,6 @@
     flex-direction:column;
     margin-top: 10vh;
     width:60%;
-    // border: 5px dotted black;
     font-family:'Source sans pro';
     padding: 10px;
     background-size: cover;
@@ -60,6 +71,11 @@
     box-shadow: 1px 3px 10px 0px $color1 ;
     animation-name: fade;
     animation-duration: 1s;
+    @media screen and (max-width:768px) {
+        background-size:contain;
+        margin-top: 25vh;
+        width: 80%;
+    }
     @keyframes fade {
         from { opacity: 0}
         to { opacity: 1}
@@ -74,11 +90,17 @@
         display: flex;
         flex-direction:column;
         justify-content:space-between;
+        @media screen and (max-width:768px) {
+            height: 250px;
+        }
     }
     .title{
         font-size: 3em;
         font-weight: normal;
         height: fit-content;
+        @media screen and (max-width:768px) {
+            font-size: 1.5em;
+        }
     }
     .date{
         font-size: 1em;
@@ -88,6 +110,9 @@
     .languages{
         font-size: 2em;
         font-weight: normal;
+        @media screen and (max-width:768px) {
+            font-size: 1em;
+        }
     }
     .base{
         margin-top: 15px;
@@ -103,6 +128,9 @@
         p{
           font-size:2em;
           font-weight: 400;
+          @media screen and (max-width:768px) {
+            font-size: 1em;
+        }
         }
       
     }   

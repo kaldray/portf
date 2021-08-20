@@ -1,0 +1,59 @@
+.home{
+    display:flex;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 1s;
+    flex-direction:column;
+}
+
+.me{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color:$color2;
+    padding: 10px;
+    width: 100%;
+    margin-top: 12vh;
+    h1{
+        font-size: 4em;
+        font-family: 'Source Sans Pro';
+        color:$color1;
+        @media screen and (max-width:768px) {
+            font-size: 2.5em;
+        }
+    }
+    h2{
+        font-size: 3em;
+        font-family: 'Source Sans Pro';
+        color:$color1;
+        @media screen and (max-width:768px) {
+            font-size: 2em;
+        }
+    }
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color:$color2;
+    width: 100%;
+    p{
+        color:$color1;
+        font-size: 3em;
+        font-family: 'Source Sans Pro';
+        @media screen and (max-width:768px) {
+            font-size: 2em;
+        }
+    }
+    a{
+        font-size: 3em;
+        font-family: 'Source Sans Pro';                              
+        align-self:center;
+        color:$color5;
+        @media screen and (max-width:768px) {
+            font-size: 1.5em;
+        }
+    }       
+}

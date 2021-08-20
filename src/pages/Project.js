@@ -1,6 +1,7 @@
 import Navigation from "../Components/Navigation";
 import ListProjects from "../Components/Projets/ListProjects";
 import { useState } from "react";
+import Footer from "../Components/Footer";
 
 const Project = (props) => {
   const projet = [
@@ -52,6 +53,7 @@ const Project = (props) => {
           </button>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
