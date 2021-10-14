@@ -17,7 +17,7 @@ const Home = () => {
             web. Mon objectif à court terme est de trouver une alternance afin
             d'acquerir de l'éxperience et continuer mon apprentisage à l'école.
           </p>
-          <a href="./files/CV.pdf">Consulter mon CV</a>
+          <a href="./files/CVjordraykalenga.pdf">Consulter mon CV</a>
         </section>
       </main>
       <Footer />
