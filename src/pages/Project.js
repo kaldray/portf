@@ -13,6 +13,7 @@ const Project = (props) => {
       infos: "Site qui permet d'enregistrer des sons depuis l'api de deezer.",
       img: "/img/deezweb.jpg",
       link: "./js/deezer/login.html",
+      color: { color: "" },
     },
     {
       id: 2,
@@ -21,7 +22,18 @@ const Project = (props) => {
       languages: "Java script, Css",
       infos: "Calculatrice réalisé avec la biblihothèque react",
       img: "img/calculette.png",
-      link: "./js/build/index.html",
+      link: "./js/calculatrice/index.html",
+      color: { color: "" },
+    },
+    {
+      id: 3,
+      title: "Projet Final",
+      date: "avril 2021",
+      languages: "HTML, SCSS, JavaSript",
+      infos: "Projet fianl de mon école ! ",
+      img: "img/hatik.png",
+      link: "./js/hatik/index.html",
+      color: { color: "white" },
     },
   ];
   let [slide, setSlide] = useState(1);
@@ -39,12 +51,22 @@ const Project = (props) => {
     }
   };
 
+  const changeColor = () => {
+    const container = document.querySelector(".container");
+    if (slide === 3) {
+      container.classList.remove("container");
+    }
+  };
+
   return (
     <>
       <Navigation />
       <main>
         <section className="main">
-          <ListProjects projet={projet.filter((p) => p.id === slide)} />
+          <ListProjects
+            changeColor={changeColor}
+            projet={projet.filter((p) => p.id === slide)}
+          />
           <button className="next" onClick={nextSlide}>
             &#10095;
           </button>

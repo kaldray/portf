@@ -27,13 +27,15 @@ const Projects = (props) => {
         onClick={goTolinkProjetcs}
       >
         <div className="slider-content">
-          <div className="base">
+          <div style={props.color} className="base">
             <h1 className="title">{props.title}</h1>
             <p className="languages">{props.languages}</p>
           </div>
           <div className="infos" style={hover}>
-            <p>{props.infos}</p>
-            <span className="date">{props.date}</span>
+            <p style={props.color}>{props.infos}</p>
+            <span style={props.color} className="date">
+              {props.date}
+            </span>
           </div>
         </div>
       </div>

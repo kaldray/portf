@@ -46,11 +46,12 @@ nav {
           flex-direction: row;
 }
 
-.navigation li {
-  margin: 10px;
+.navigation .li {
+  margin: 15px;
   color: #ffffff;
   font-size: 1.5em;
   font-family: 'Source sans pro';
+  border-bottom: 3px solid transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -63,16 +64,10 @@ nav {
   }
 }
 
-.navigation .nav-active:after {
-  position: relative;
-  display: inline-block;
-  content: '';
-  border: 1px solid white;
-  width: 71.5px;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-  left: -25%;
-  top: -30%;
+.navigation .nav-active {
+  border-bottom: 3px solid #81ae9d;
+  -webkit-transition: margin-bottom 5s ease-in .5s;
+  transition: margin-bottom 5s ease-in .5s;
 }
 
 html, body {
@@ -121,7 +116,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .main .next {
-    top: 100%;
+    top: 110%;
+    right: 25%;
   }
 }
 
@@ -143,13 +139,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .main .previous {
-    top: 100%;
-    margin-bottom: 25px;
+    top: 110%;
+    left: 25%;
   }
-}
-
-.hide {
-  display: none !important;
 }
 
 .container {
@@ -176,11 +168,14 @@ body {
   animation-name: fade;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    background-size: contain;
+    background-size: cover;
+    margin-top: 25vh;
+    width: 80%;
   }
 }
 
@@ -218,6 +213,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .container .slider-content {
+    height: 250px;
+  }
 }
 
 .container .title {
@@ -318,7 +319,7 @@ body {
   background-color: #fb9f89;
   padding: 10px;
   width: 100%;
-  margin-top: 68.6px;
+  margin-top: 12vh;
 }
 
 .me h1 {
@@ -329,7 +330,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .me h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 
@@ -341,7 +342,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .me h2 {
-    font-size: 1em;
+    font-size: 2em;
   }
 }
 
@@ -356,14 +357,18 @@ body {
   padding: 10px;
   background-color: #fb9f89;
   width: 100%;
-  margin: auto;
-  margin-top: 10vh;
 }
 
 .presentation p {
   color: #1e1e24;
   font-size: 3em;
   font-family: 'Source Sans Pro';
+}
+
+@media screen and (max-width: 768px) {
+  .presentation p {
+    font-size: 2em;
+  }
 }
 
 .presentation a {
@@ -375,12 +380,18 @@ body {
   color: #21a179;
 }
 
+@media screen and (max-width: 768px) {
+  .presentation a {
+    font-size: 1.5em;
+  }
+}
+
 footer {
   background-color: #81ae9d;
   bottom: 0%;
   position: absolute;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +409,8 @@ footer {
 
 footer .social img {
   height: 25px;
-  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: white;
 }
 
@@ -407,72 +419,7 @@ footer .social img:hover {
 }
 
 footer span {
-  color: white;
+  color: black;
   font-family: 'Source Sans Pro';
-}
-
-#name {
-  -webkit-animation: 30s ease infinite;
-          animation: 30s ease infinite;
-  -webkit-perspective: 200px;
-          perspective: 200px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  75% {
-    opacity: 0;
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-600px);
-            transform: translateY(-600px);
-  }
-}
-
-@keyframes anim {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  75% {
-    opacity: 0;
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-600px);
-            transform: translateY(-600px);
-  }
 }
 /*# sourceMappingURL=index.css.map */
