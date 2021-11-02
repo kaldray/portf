@@ -36,7 +36,7 @@ const Project = (props) => {
       color: { color: "white" },
     },
   ];
-  let [slide, setSlide] = useState(1);
+  let [slide, setSlide] = useState(3);
 
   const nextSlide = () => {
     setSlide((slide += 1));
@@ -51,12 +51,7 @@ const Project = (props) => {
     }
   };
 
-  const changeColor = () => {
-    const container = document.querySelector(".container");
-    if (slide === 3) {
-      container.classList.remove("container");
-    }
-  };
+  
 
   return (
     <>
@@ -64,7 +59,6 @@ const Project = (props) => {
       <main>
         <section className="main">
           <ListProjects
-            changeColor={changeColor}
             projet={projet.filter((p) => p.id === slide)}
           />
           <button className="next" onClick={nextSlide}>
