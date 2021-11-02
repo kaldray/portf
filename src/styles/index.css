@@ -202,7 +202,7 @@ body {
 }
 
 .container .slider-content {
-  height: 500px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,26 +323,26 @@ body {
 }
 
 .me h1 {
-  font-size: 4em;
+  font-size: 2em;
   font-family: 'Source Sans Pro';
   color: #1e1e24;
 }
 
 @media screen and (max-width: 768px) {
   .me h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
 
 .me h2 {
-  font-size: 3em;
+  font-size: 1.5em;
   font-family: 'Source Sans Pro';
   color: #1e1e24;
 }
 
 @media screen and (max-width: 768px) {
   .me h2 {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
@@ -361,18 +361,18 @@ body {
 
 .presentation p {
   color: #1e1e24;
-  font-size: 3em;
+  font-size: 1.5em;
   font-family: 'Source Sans Pro';
 }
 
 @media screen and (max-width: 768px) {
   .presentation p {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
 .presentation a {
-  font-size: 3em;
+  font-size: 1em;
   font-family: 'Source Sans Pro';
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

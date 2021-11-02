@@ -16,19 +16,19 @@
     width: 100%;
     margin-top: 12vh;
     h1{
-        font-size: 4em;
+        font-size: 2em;
         font-family: 'Source Sans Pro';
         color:$color1;
         @media screen and (max-width:768px) {
-            font-size: 2.5em;
+            font-size: 1.5em;
         }
     }
     h2{
-        font-size: 3em;
+        font-size: 1.5em;
         font-family: 'Source Sans Pro';
         color:$color1;
         @media screen and (max-width:768px) {
-            font-size: 2em;
+            font-size: 1em;
         }
     }
 }
@@ -41,14 +41,14 @@
     width: 100%;
     p{
         color:$color1;
-        font-size: 3em;
+        font-size: 1.5em;
         font-family: 'Source Sans Pro';
         @media screen and (max-width:768px) {
-            font-size: 2em;
+            font-size: 1em;
         }
     }
     a{
-        font-size: 3em;
+        font-size: 1em;
         font-family: 'Source Sans Pro';                              
         align-self:center;
         color:$color5;

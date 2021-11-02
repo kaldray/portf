@@ -13,9 +13,8 @@ const Home = () => {
         </section>
         <section className="presentation">
           <p>
-            Je suis étudiant en informatique qui souhaite devenir développeur
-            web. Mon objectif à court terme est de trouver une alternance afin
-            d'acquerir de l'éxperience et continuer mon apprentisage à l'école.
+            Je suis étudiant en développement web. Mon objectif à court terme est de trouver une alternance afin
+            d'acquerir de l'éxperience et continuer mon apprentisage à l'école. Je vous laisse visualiser mes différents projets sur cette même page.
           </p>
           <a href="./files/CVjordraykalenga.pdf">Consulter mon CV</a>
         </section>
