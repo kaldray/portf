@@ -1,0 +1,52 @@
+$color1 : #000000;
+$color2 : #041c3f;
+$color3 : #7b1425;
+
+@font-face {
+    font-family: 'Montserrat-Regular,Montserrat-Italic';
+    src: url("../fonts/Montserrat/Montserrat-Black.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-BlackItalic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-BoldItalic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-ExtraLight.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-ExtraLightItalic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Italic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-LightItalic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-MediumItalic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-Thin.ttf") format('truetype');
+    src: url("../fonts/Montserrat/Montserrat-ThinItalic.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald/Oswald-Bold.ttf') format('truetype'); 
+    src: url('../fonts/Oswald/Oswald-ExtraLight.ttf') format('truetype'); 
+    src: url('../fonts/Oswald/Oswald-Light.ttf') format('truetype'); 
+    src: url('../fonts/Oswald/Oswald-Medium.ttf') format('truetype'); 
+    src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype'); 
+    src: url('../fonts/Oswald/Oswald-SemiBold.ttf') format('truetype'); 
+}
+
+img{
+    object-fit: cover;
+    object-position: center;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    ::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+}
+
+    

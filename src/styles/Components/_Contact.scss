@@ -1,0 +1,44 @@
+.contact {
+  background-color: $color1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 69px;
+  }
+  h2 {
+    text-align: center;
+    font-family: $font;
+    color: set-color(black);
+    font-size: 3em;
+    height: fit-content;
+    margin-bottom: 5vh;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 50px 50px;
+    margin-bottom: 5vh;
+    background-color: $color1;
+    box-shadow: -10px -10px 20px #292929, 10px 10px 20px #3d3d3d;
+  }
+  h3 {
+    color: $text-color-ligth;
+    font-family: $font;
+    font-size: 1.2em;
+  }
+  a {
+    color: $text-color-ligth;
+    margin-top: 10px;
+    font-family: $font;
+    font-size: 1.5em;
+  }
+}

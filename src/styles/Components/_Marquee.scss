@@ -1,0 +1,48 @@
+.marquee-container {
+  background-color: white;
+  margin: 5% 0;
+  overflow: hidden;
+  h2 {
+    text-align: center;
+    font-family: $font;
+    color: set-color(white);
+    margin: 10vh 0;
+    font-size: 3em;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 68.6px;
+  }
+}
+
+.marquee {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  animation: imageMovement 10s linear infinite;
+  margin-bottom: 10vh;
+  width: 100%;
+  svg {
+    height: 100px;
+    width: 100px;
+    min-height: 50px;
+    min-width: 50px;
+    margin: 0 48px 0 48px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+  }
+}
+#github {
+  margin-right: 0;
+}
+
+@keyframes imageMovement {
+  from {
+    transform: trasnslateX(0px);
+  }
+  to {
+    transform: translateX(-1519.2px);
+  }
+}

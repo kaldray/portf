@@ -1,139 +1,118 @@
-html,body{
-    min-height: 100vh;
+.title-project {
+  text-align: center;
+  color: $text-color-ligth;
+  font-size: 3em;
+  margin: 10% 0;
+  font-family: $font;
 }
 
-
-
-body{
-    position: relative;
-    @media screen and (max-width:768px) {
-        margin-bottom: 68.6px;
-    }
-    
-}
-.main{
-    display: flex;
-    justify-content: center;
-    position:relative;
-    animation-name: fade;
-    animation-duration: 1s;
-    .next{
-        position:absolute;
-        right: 10%;
-        background-color:$color4;
-        font-size:  1.5em;
-        padding: 5px;
-        font-family:'Source sans pro';
-        top: 50%;
-        margin: auto;
-        border-radius: 10%;
-        &:hover{
-            cursor: pointer;
-        }
-        @media screen and (max-width:768px) {
-            top:110%;
-            right: 25%;
-        }
-
-    }
-    .previous{
-        position: absolute;
-        left: 10%;
-        background-color:$color4;
-        font-size:1.5em;
-        padding: 5px;
-        font-family:'Source sans pro';
-        top: 50%;
-        margin: auto;
-        border-radius: 10%;
-        &:hover{
-            cursor: pointer;
-        }
-        @media screen and (max-width:768px) {
-            top: 110%;
-            left: 25%;
-        }
-        
-    }
+.projet-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  position: relative;
+  animation-name: fade;
+  animation-duration: 1s;
+  padding-bottom: 10%;
+  background-color: $color1;
+  height: 100%;
+  padding: 0;
+  @media screen and (max-width: 480px) {
+    flex-flow: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-
-.container{
-    display: flex;
-    justify-content:center;
-    flex-direction:column;
-    margin-top: 10vh;
-    width:60%;
-    font-family:'Source sans pro';
-    padding: 10px;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0vh 3vw 10vh 0;
+  width: 40%;
+  font-family: "Source sans pro";
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: fade;
+  animation-name: fade;
+  box-shadow: -11px -11px 11px #262626, 11px 11px 11px #404040;
+  border-radius: 50px;
+  animation-duration: 1s;
+  color: black;
+  @media screen and (max-width: 480px) {
     background-size: cover;
-    background-repeat: no-repeat;
-    animation-name: fade;
-    box-shadow: 1px 3px 10px 0px $color1 ;
-    animation-name: fade;
-    animation-duration: 1s;
-    color: black;
-    @media screen and (max-width:768px) {
-        background-size:cover;
-        margin-top: 25vh;
-        width: 80%;
+    width: 60%;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
     }
-    @keyframes fade {
-        from { opacity: 0}
-        to { opacity: 1}
-        
+    to {
+      opacity: 1;
     }
+  }
 
-    &:hover{
-        cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
+  .slider-content {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    @media screen and (max-width: 468px) {
+      height: 35vh;
     }
-    .slider-content {
-        height: 400px;
-        display: flex;
-        flex-direction:column;
-        justify-content:space-between;
-        @media screen and (max-width:768px) {
-            height: 250px;
-        }
+  }
+  .title {
+    font-size: 3vw;
+    font-weight: normal;
+    height: fit-content;
+    font-family: $font;
+    @media screen and (max-width: 768px) {
+      font-size: 1.5em;
     }
-    .title{
-        font-size: 3em;
-        font-weight: normal;
-        height: fit-content;
-        @media screen and (max-width:768px) {
-            font-size: 1.5em;
-        }
+  }
+  .date {
+    font-size: 2vw;
+    font-weight: normal;
+    font-family: $font;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
     }
-    .date{
+  }
+  .languages {
+    font-size: 2.5vw;
+    font-weight: normal;
+    font-family: $font;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
+  }
+  .base {
+    margin-top: 15px;
+  }
+  .infos {
+    text-align: left;
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    p {
+      font-size: 2vw;
+      font-weight: 400;
+      font-family: $font;
+      @media screen and (max-width: 768px) {
         font-size: 1em;
-        font-weight: normal;
-        align-self:flex-end;
+      }
     }
-    .languages{
-        font-size: 2em;
-        font-weight: normal;
-        @media screen and (max-width:768px) {
-            font-size: 1em;
-        }
-    }
-    .base{
-        margin-top: 15px;
-    }
-    .infos{
-        text-align: left;
-        animation-name: fade;
-        animation-duration: 1s;
-        @keyframes fade {
-            from { opacity : 0}
-            to { opacity : 1}
-        }
-        p{
-          font-size:2em;
-          font-weight: 400;
-          @media screen and (max-width:768px) {
-            font-size: 1em;
-        }
-        }
-      
-    }   
+  }
 }

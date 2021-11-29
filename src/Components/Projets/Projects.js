@@ -1,7 +1,4 @@
-import { useState } from "react";
 const Projects = (props) => {
-  const [hover, setHover] = useState({ display: "none" });
-
   const [img, link] = [props.img, props.link];
 
   const background = {
@@ -15,23 +12,13 @@ const Projects = (props) => {
 
   return (
     <>
-      <div
-        className="container"
-        onMouseEnter={(e) => {
-          setHover({ display: "flex" });
-        }}
-        onMouseLeave={(e) => {
-          setHover({ display: "none" });
-        }}
-        style={background}
-        onClick={goTolinkProjetcs}
-      >
+      <div className="container" style={background} onClick={goTolinkProjetcs}>
         <div className="slider-content">
           <div style={props.color} className="base">
             <h1 className="title">{props.title}</h1>
             <p className="languages">{props.languages}</p>
           </div>
-          <div className="infos" style={hover}>
+          <div className="infos">
             <p style={props.color}>{props.infos}</p>
             <span style={props.color} className="date">
               {props.date}

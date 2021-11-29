@@ -1,21 +1,38 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
-$color1: #1e1e24;
+$color1: #333333;
 $color2: #fb9f89;
 $color3: #c4af9a;
 $color4: #81ae9d;
 $color5: #21a179;
+$text-color-ligth: #f1f1f1;
+$text-color-dark: #010101;
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
+}
+
+$font: "Source sans pro";
+
+html {
+  overflow-x: hidden;
+}
+
+@function set-color($color) {
+  @if (lightness($color) > 40) {
+    @return $text-color-dark;
+  } @else {
+    @return $text-color-ligth;
+  }
 }
