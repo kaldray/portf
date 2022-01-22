@@ -17,7 +17,7 @@
   background-color: $color1;
   height: 100%;
   padding: 0;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 489px) {
     flex-flow: inherit;
     flex-direction: column;
     align-items: center;
@@ -67,29 +67,28 @@
     }
   }
   .title {
-    font-size: 3vw;
+    font-size: 2rem;
     font-weight: normal;
     height: fit-content;
     font-family: $font;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 489px) {
       font-size: 1.5em;
     }
   }
   .date {
-    font-size: 2vw;
+    font-size: 1.3rem;
     font-weight: normal;
     font-family: $font;
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 489px) {
       font-size: 1em;
     }
   }
   .languages {
-    font-size: 2.5vw;
+    font-size: 1.3rem;
     font-weight: normal;
     font-family: $font;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 489px) {
       font-size: 1em;
     }
   }
@@ -107,10 +106,10 @@
       }
     }
     p {
-      font-size: 2vw;
+      font-size: 1.5rem;
       font-weight: 400;
       font-family: $font;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 489px) {
         font-size: 1em;
       }
     }

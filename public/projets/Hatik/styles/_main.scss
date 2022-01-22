@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    scroll-behavior: smooth;
     article{
         margin: auto;
         display: flex;
@@ -52,7 +53,7 @@
                 width: 45px;
                 height: 45px;
                 position: relative;
-                left: 48%;  
+                left: 48%;
                 display: flex;
                 justify-content: center;
                 @media screen and (max-width:768px) {
@@ -62,10 +63,10 @@
                 }
             }
         }
-        
+
     }
-        
-    
+
+
     #hatik-top-page{
         height: auto;
         width: auto;
@@ -74,7 +75,7 @@
         max-height: 600px;
         align-self: flex-end;
      }
-   
+
 }
 
 
@@ -82,6 +83,8 @@
     margin-top: 83px;
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
+
     img{
         height: auto;
         width: 100%;
@@ -90,15 +93,15 @@
     }
     .reverse-meduse{
        position: relative;
-       top: 95px; 
+       top: 95px;
        transform:rotateY(180deg);
        left: 5%;
     }
     .meduse-right{
         position: relative;
-        top: 0px; 
+        top: 0px;
         right: 8%;
-    } 
+    }
 
 }
 
@@ -112,6 +115,8 @@
     margin-top: 100px;
     padding-top: 35px;
     color: white;
+    scroll-behavior: smooth;
+
     h2{
         font-family: Oswald;
         font-weight: bold;
@@ -150,6 +155,8 @@
     margin-top: 0;
     margin-bottom: 450px;
     position: relative;
+    scroll-behavior: smooth;
+
     @media screen and (max-width:768px) {
         margin-bottom: 200px;
     }
@@ -176,6 +183,8 @@
     justify-content: center;
     align-items: center;
     color: white;
+    scroll-behavior: smooth;
+
     div{
         h2{
             font-family: 'Oswald';
@@ -193,7 +202,7 @@
             font-size: 18pt;
             text-align: center;
         }
-        
+
     }
     .streaming{
         display: flex;
@@ -247,6 +256,8 @@
     justify-content: center;
     align-items: center;
     color: white;
+    scroll-behavior: smooth;
+
     h2{
         font-family: Oswald;
         font-weight: bold;
@@ -262,7 +273,7 @@
         flex-direction: row;
         align-items: center;
         margin-bottom: 111px;
-       
+
         img{
             width: 121px;
             height: 97px;
@@ -281,7 +292,7 @@
                 top: 47%;
                 left: 15%;
                 transform: rotate(250deg);
-            } 
+            }
             &::after{
                 background: white;
                 position: absolute;
@@ -292,7 +303,7 @@
                 left: 47%;
                 top: 15%;
                 transform: rotate(15deg);
-            } 
+            }
         }
         :last-child{
             width: 172px ;
@@ -338,7 +349,7 @@
             >figure{
                 scroll-snap-align:  start;
             }
-            
+
         }
 
     }
@@ -346,8 +357,8 @@
             margin-left: 48px;
             color: white;
             @media screen and (max-width:768px) {
-                overflow-x: auto;
                 width: 257px;
+                overflow-x: auto;
                 flex-shrink: 0;
                 margin-left: 0;
             }
@@ -367,8 +378,8 @@
                 height: 444px;
             }
         }
-        
-    
+
+
     button{
         background-color: transparent;
         border: 5px solid white;

@@ -1,3 +1,5 @@
+import React from "react";
+
 const Projects = (props) => {
   const [img, link] = [props.img, props.link];
 

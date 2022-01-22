@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import Footer from "../Components/Footer";
 import Navigation from "../Components/Navigation";
 import ListProjets from "../Components/Projets/ListProjects";
@@ -10,7 +11,6 @@ import { ReactComponent as ReactLogo } from "../files/react-1.svg";
 import { ReactComponent as Sass } from "../files/sass-1.svg";
 import { ReactComponent as Styled } from "../files/styled-components-1.svg";
 import Contact from "../Components/Contact";
-import { useRef } from "react";
 
 const Home = () => {
   const myRefHome = useRef(null);
@@ -40,7 +40,9 @@ const Home = () => {
               NodeJS ou bien Django. Je suis très ouvert et désireux d'apprendre
               !
             </p>
-            <a href="./files/CVjordraykalenga.pdf">Consulter mon CV</a>
+            <button>
+              <a href="./files/CVjordraykalenga.pdf">Consulter mon CV</a>
+            </button>
           </section>
         </div>
         <h2 className="title-project">Projets</h2>

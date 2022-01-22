@@ -1,46 +1,28 @@
-function removeimg() {
-  const imgHatik = document.querySelector("#hatik-top-page");
-  if (window.innerWidth < 769) {
-    imgHatik.classList.add("none");
-  }
-}
-function addimg() {
-  const imgHatik = document.querySelector("#hatik-top-page");
-  if (window.innerWidth > 769) {
-    imgHatik.classList.remove("none");
-  }
-}
-
 function goToTopPage() {
-  window.scrollTo(0, 0);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 const navlogo = document.getElementById("nav-logo");
 
-window.addEventListener("resize", function addimg() {
+window.addEventListener("resize", function addOrRemove() {
   const imgHatik = document.querySelector("#hatik-top-page");
   if (window.innerWidth > 769) {
     imgHatik.classList.remove("none");
-  }
-});
-window.addEventListener("resize", function removeimg() {
-  const imgHatik = document.querySelector("#hatik-top-page");
-  if (window.innerWidth < 769) {
+  } else {
     imgHatik.classList.add("none");
   }
 });
-window.addEventListener("load", function addimg() {
+
+window.addEventListener("DOMContentLoaded", function addOrRemoveOnLoad() {
   const imgHatik = document.querySelector("#hatik-top-page");
   if (window.innerWidth > 769) {
     imgHatik.classList.remove("none");
-  }
-});
-window.addEventListener("load", function removeimg() {
-  const imgHatik = document.querySelector("#hatik-top-page");
-  if (window.innerWidth < 769) {
+  } else {
     imgHatik.classList.add("none");
   }
 });
+
+// go to top page when i click on page logo
 navlogo.addEventListener("click", function () {
   goToTopPage();
 });

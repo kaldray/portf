@@ -1,7 +1,8 @@
+import React from "react";
 import Projects from "./Projects";
 
-const ListProjects = (props) => {
-  const projet = [
+const ListProjects = () => {
+  const projets = [
     {
       id: 1,
       title: "Deez'web",
@@ -46,7 +47,7 @@ const ListProjects = (props) => {
 
   return (
     <>
-      {projet.map((projet) => (
+      {projets.map((projet) => (
         <Projects key={projet.id} {...projet} />
       ))}
     </>

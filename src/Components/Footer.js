@@ -1,3 +1,5 @@
+import React from "react";
+
 const Footer = () => {
   const goToSocialMedia = (p) => {
     if (p === "github") {

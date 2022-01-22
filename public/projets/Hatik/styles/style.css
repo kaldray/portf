@@ -141,6 +141,7 @@ nav img:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 20px;
+  scroll-behavior: smooth;
 }
 
 .top-page article {
@@ -254,6 +255,7 @@ nav img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  scroll-behavior: smooth;
 }
 
 .meduse-deux img, .meduse-trois img {
@@ -296,6 +298,7 @@ nav img:hover {
   margin-top: 100px;
   padding-top: 35px;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .decouvir-album h2 {
@@ -350,6 +353,7 @@ nav img:hover {
   margin-top: 0;
   margin-bottom: 450px;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 768px) {
@@ -392,6 +396,7 @@ nav img:hover {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .ecouter-album div h2 {
@@ -504,6 +509,7 @@ nav img:hover {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .boutique h2 {
