@@ -43,6 +43,16 @@ const ListProjects = () => {
       link: "./projets/pokedex/index.html",
       color: { color: "black" },
     },
+    {
+      id: 5,
+      title: "Clavier virtuel",
+      date: "janvier 2022",
+      languages: "HTML, CSS , Java Script",
+      infos: "Clavier virtuel, partie javascript à venir...",
+      img: "img/claviervirtuel.png",
+      link: "./projets/claviervirtuel/index.html",
+      color: { color: "white" },
+    },
   ];
 
   return (
