@@ -3,16 +3,16 @@ import Projects from "./Projects";
 
 const ListProjects = () => {
   const projets = [
-    {
-      id: 1,
-      title: "Deez'web",
-      date: "mars 2021",
-      languages: "Html, Css, Java script",
-      infos: "Site qui permet d'enregistrer des sons depuis l'api de deezer.",
-      img: "/img/deezweb.jpg",
-      link: "./projets/deezer/login.html",
-      color: { color: "" },
-    },
+    // {
+    //   id: 1,
+    //   title: "Deez'web",
+    //   date: "mars 2021",
+    //   languages: "Html, Css, Java script",
+    //   infos: "Site qui permet d'enregistrer des sons depuis l'api de deezer.",
+    //   img: "/img/deezweb.jpg",
+    //   link: "./projets/deezer/login.html",
+    //   color: { color: "" },
+    // },
     {
       id: 2,
       title: "React Calculatrice",
@@ -48,9 +48,19 @@ const ListProjects = () => {
       title: "Clavier virtuel",
       date: "janvier 2022",
       languages: "HTML, CSS , Java Script",
-      infos: "Clavier virtuel, partie javascript à venir...",
+      infos: "Clavier virtuel",
       img: "img/claviervirtuel.png",
       link: "./projets/claviervirtuel/index.html",
+      color: { color: "white" },
+    },
+    {
+      id: 6,
+      title: "Deezer",
+      date: "mars 2022",
+      languages: "React,Bootstrap",
+      infos: "Recherche de son avec l'api de deezer",
+      img: "img/deezer.jpg",
+      link: "./projets/deezereact/index.html",
       color: { color: "white" },
     },
   ];
