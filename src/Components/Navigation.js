@@ -11,7 +11,6 @@ const Navigation = (props) => {
       if (window.innerWidth > 480) setToggle(false);
     };
     window.addEventListener("resize", changeWidth);
-
     return () => window.removeEventListener("resize", changeWidth);
   }, []);
 

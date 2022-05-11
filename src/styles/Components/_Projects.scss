@@ -1,7 +1,7 @@
 .title-project {
   text-align: center;
   color: $text-color-ligth;
-  font-size: 3em;
+  font-size: 2rem;
   margin: 10% 0;
   font-family: $font;
 }
@@ -9,12 +9,13 @@
 .projet-container {
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
+  // flex-flow: wrap;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   animation-name: fade;
   animation-duration: 1s;
   padding-bottom: 10%;
-  background-color: $color1;
   height: 100%;
   padding: 0;
   @media screen and (max-width: 489px) {
@@ -28,21 +29,19 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0vh 3vw 10vh 0;
-  width: 40%;
+  align-items: center;
+  margin: 0vh 0vw 10vh 0;
+  width: 80%;
   font-family: "Source sans pro";
   padding: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation-name: fade;
   animation-name: fade;
   box-shadow: -11px -11px 11px #262626, 11px 11px 11px #404040;
-  border-radius: 50px;
+  border-radius: 0.1em;
   animation-duration: 1s;
   color: black;
   @media screen and (max-width: 480px) {
     background-size: cover;
-    width: 60%;
+    width: 80%;
   }
   @keyframes fade {
     from {
@@ -53,17 +52,13 @@
     }
   }
 
-  &:hover {
-    cursor: pointer;
-  }
-  .slider-content {
-    height: 350px;
+  .project-description {
+    // height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    align-items: center;
     @media screen and (max-width: 468px) {
-      height: 35vh;
+      // height: 35vh;
     }
   }
   .title {
@@ -71,6 +66,7 @@
     font-weight: normal;
     height: fit-content;
     font-family: $font;
+    color: $text-color-ligth;
     @media screen and (max-width: 489px) {
       font-size: 1.5em;
     }
@@ -79,6 +75,7 @@
     font-size: 1.3rem;
     font-weight: normal;
     font-family: $font;
+    color: $text-color-ligth;
     @media screen and (max-width: 489px) {
       font-size: 1em;
     }
@@ -87,16 +84,19 @@
     font-size: 1.3rem;
     font-weight: normal;
     font-family: $font;
+    color: $text-color-ligth;
 
     @media screen and (max-width: 489px) {
       font-size: 1em;
     }
   }
   .base {
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 0.5em;
   }
   .infos {
-    text-align: left;
+    margin: 1em 0;
+    text-align: center;
     @keyframes fade {
       from {
         opacity: 0;
@@ -109,9 +109,30 @@
       font-size: 1.5rem;
       font-weight: 400;
       font-family: $font;
+      color: $text-color-ligth;
       @media screen and (max-width: 489px) {
         font-size: 1em;
       }
     }
+  }
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+  border-radius: 0.1em;
+  margin-top: 1em;
+}
+
+button {
+  background-color: $color2;
+  padding: 0.5em;
+  color: $text-color-dark;
+  border-color: transparent;
+  border-radius: 0.1em;
+  margin-bottom: 1em;
+
+  &:hover {
+    cursor: pointer;
   }
 }

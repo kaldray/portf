@@ -30,7 +30,7 @@ const Home = () => {
         <div ref={myRefHome} className="home">
           <section className="me">
             <h1>Jordray KALENGA</h1>
-            <h2>Développeur front-end web junior</h2>
+            <h2>Développeur web front-end</h2>
             <p>
               Je suis étudiant en développement web. Mon objectif à court terme
               est de trouver une alternance afin d'acquerir de l'éxperience et

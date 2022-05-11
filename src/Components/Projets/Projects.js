@@ -1,33 +1,30 @@
 import React from "react";
 
-const Projects = (props) => {
-  const [img, link] = [props.img, props.link];
-
-  const background = {
-    backgroundImage: `url(${img})`,
-  };
-
-  const goTolinkProjetcs = (event) => {
-    event.preventDefault();
+const Projects = ({ img, link, title, languages, infos, date }) => {
+  const goTolinkProjetcs = () => {
     window.location.href = `${link}`;
   };
 
   return (
     <>
-      <div className="container" style={background} onClick={goTolinkProjetcs}>
-        <div className="slider-content">
-          <div style={props.color} className="base">
-            <h1 className="title">{props.title}</h1>
-            <p className="languages">{props.languages}</p>
+      <article className="container">
+        <img
+          className="img-container"
+          src={img}
+          alt="La page d'acuueil du projet"
+        />
+        <div className="project-description">
+          <div className="base">
+            <h1 className="title">{title}</h1>
+            <p className="languages">{languages}</p>
           </div>
           <div className="infos">
-            <p style={props.color}>{props.infos}</p>
-            <span style={props.color} className="date">
-              {props.date}
-            </span>
+            <p>{infos}</p>
+            <span className="date">Réalisé en {date}</span>
           </div>
         </div>
-      </div>
+        <button onClick={goTolinkProjetcs}>Allez vers le projet</button>
+      </article>
     </>
   );
 };

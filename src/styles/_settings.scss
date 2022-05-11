@@ -36,3 +36,8 @@ html {
     @return $text-color-ligth;
   }
 }
+
+img {
+  object-fit: contain;
+  object-position: center;
+}
