@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Footer from "../Components/Footer";
 import Navigation from "../Components/Navigation";
 import ListProjets from "../Components/Projets/ListProjects";
@@ -17,9 +17,10 @@ const Home = () => {
   const myRefProject = useRef(null);
   const myRefCompetences = useRef(null);
   const myRefContact = useRef(null);
+  const projetRef = useRef(null);
 
   return (
-    <>
+    <React.Fragment>
       <Navigation
         myRefHome={myRefHome}
         myRefProject={myRefProject}
@@ -47,7 +48,7 @@ const Home = () => {
         </div>
         <h2 className="title-project">Projets</h2>
         <div ref={myRefProject} className="projet-container">
-          <ListProjets></ListProjets>
+          <ListProjets projetRef={projetRef} />
         </div>
         <section className="marquee-container">
           <h2 ref={myRefCompetences}>Compétences</h2>
@@ -73,7 +74,7 @@ const Home = () => {
         <Contact myRefContact={myRefContact}></Contact>
       </main>
       <Footer />
-    </>
+    </React.Fragment>
   );
 };
 

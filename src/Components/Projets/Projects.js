@@ -1,13 +1,13 @@
 import React from "react";
 
-const Projects = ({ img, link, title, languages, infos, date }) => {
+const Projects = ({ img, link, title, languages, infos, date, projetRef }) => {
   const goTolinkProjetcs = () => {
     window.location.href = `${link}`;
   };
 
   return (
     <>
-      <article className="container">
+      <article ref={projetRef} className="container">
         <img
           className="img-container"
           src={img}
