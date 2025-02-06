@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a159939e.css",
+    "main.js": "./static/js/main.f5661cab.js",
+    "static/media/MabryDeezer-Regular.otf": "./static/media/MabryDeezer-Regular.96e184fb11ea437d40f0.otf",
+    "static/media/heart-svgrepo-com-2.svg": "./static/media/heart-svgrepo-com-2.d6b455ad4f5ead4158819b9a66d5854e.svg",
+    "static/media/heart-svgrepo-com.svg": "./static/media/heart-svgrepo-com.0255b7174b061e045f3c3d3940b44d8f.svg",
+    "index.html": "./index.html",
+    "static/media/bin-svgrepo-com.svg": "./static/media/bin-svgrepo-com.6c677e68a05a69607f9847ff81f20d5c.svg",
+    "main.a159939e.css.map": "./static/css/main.a159939e.css.map",
+    "main.f5661cab.js.map": "./static/js/main.f5661cab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a159939e.css",
+    "static/js/main.f5661cab.js"
+  ]
+}

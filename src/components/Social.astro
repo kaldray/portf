@@ -1,0 +1,36 @@
+---
+import Github from "./svg/Fa6BrandsGithub.astro";
+import Blusky from "./svg/Fa6BrandsBluesky.astro";
+import Linkedin from "./svg/Fa6BrandsLinkedin.astro";
+import ExternalLink from "./svg/TablerExternalLink.astro";
+---
+
+<div class="flex flex-row items-center justify-start gap-4 mt-3">
+  <div class="flex flew-row">
+    <a
+      class="inline-flex items-center gap-1.5 underline underline-offset-2 decoration-1 group text-sm font-medium"
+      href="https://github.com/kaldray"
+      target="_blank"
+      ><Github /> Github
+      <ExternalLink class="motion-safe:group-hover:animate-bounce" />
+    </a>
+  </div>
+  <div class="flex flew-row">
+    <a
+      class="inline-flex items-center gap-1.5 underline underline-offset-2 decoration-1 group text-sm font-medium"
+      href="https://www.linkedin.com/in/jordray-kalenga-ndontoni-330b7919b/"
+      target="_blank"
+      ><Linkedin /> Linkedin
+      <ExternalLink class="motion-safe:group-hover:animate-bounce" />
+    </a>
+  </div>
+  <div class="flex flew-row">
+    <a
+      class="inline-flex items-center gap-1.5 underline underline-offset-2 decoration-1 group text-sm font-medium"
+      href="https://bsky.app/profile/dray-25.bsky.social"
+      target="_blank"
+      ><Blusky /> Blusky
+      <ExternalLink class="motion-safe:group-hover:animate-bounce" />
+    </a>
+  </div>
+</div>

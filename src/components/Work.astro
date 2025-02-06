@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from "astro:content";
+import ExternalLink from "../components/svg/TablerExternalLink.astro";
+const allExperiences = await getCollection("work");
+
+function formatDate(date: Date) {
+  const dateObject = new Date(date);
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  };
+  return dateObject.toLocaleDateString("fr-FR", options);
+}
+---
+
+<section class="my-10">
+  <h2 class="font-display text-2xl font-semibold my-5">Expériences</h2>
+  {
+    allExperiences.map(async (data) => {
+      const { Content } = await render(data);
+      return (
+        <>
+          <article class="flex flex-col gap-1.5 my-5 text-balance">
+            <h3 class="text-lg font-semibold w-max">{data.data.company}</h3>
+            <h4 class="text-md font-medium">{data.data.jobTitle}</h4>
+            <div class="*:list-disc *:text-black/80 [&_ul]:ml-10 [&_li]:text-md [&_p]:text-md">
+              <Content />
+            </div>
+            <span class="text-sm font-medium">
+              {formatDate(data.data.startDate)} -
+              {typeof data.data.endDate === "string"
+                ? "en cours"
+                : formatDate(data.data.endDate)}
+            </span>
+          </article>
+        </>
+      );
+    })
+  }
+</section>
+
+<style></style>

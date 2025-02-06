@@ -1,0 +1,26 @@
+---
+import Home from "./svg/DashiconsAdminHome.astro";
+import Pdf from "./svg/Pdf.astro";
+---
+
+<nav class="my-5">
+  <ul class="flex flex-row gap-5">
+    <li
+      class="underline underline-offset-2 decoration-2 decoration-dashed inline-flex items-center gap-1"
+    >
+      <Home /> Accueil
+    </li>
+    <li>
+      <a
+        class="underline underline-offset-2 inline-flex items-center gap-1 group"
+        href="/files/CVjordraykalenga.pdf"
+        target="_blank"
+        >Télécharger mon CV
+        <Pdf
+          fill="dark:fill-white"
+          class="motion-safe:group-hover:animate-bounce"
+        />
+      </a>
+    </li>
+  </ul>
+</nav>

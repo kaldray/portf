@@ -1,0 +1,406 @@
+#container{
+    background-image: linear-gradient(to bottom ,$color1,$color2,$color3,$color1);
+    padding-top: 60px;
+}
+
+.top-page{
+    background-color: $color1;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    scroll-behavior: smooth;
+    article{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        @media screen and(max-width:768px) {
+            justify-content: center;
+        }
+        #vague-a-lame{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            @media screen and (max-width:768px) {
+                display: grid;
+                margin-top: 0;
+                place-items: center;
+                div{
+                    grid-row:1 ;
+                }
+            }
+            h1{
+                color:white;
+                padding: 10px;
+                font-size: 3em;
+                font-family: 'Oswald';
+                @media screen and (max-width:768px) {
+                    text-align: center;
+                }
+                mark{
+                    background-image: linear-gradient(to right ,red,rgb(170, 0, 156),blue);
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color:transparent;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    @supports (background-clip: text) {
+                        background-clip: text;
+                    }
+                }
+            }
+            >:last-child{
+                width: 45px;
+                height: 45px;
+                position: relative;
+                left: 48%;
+                display: flex;
+                justify-content: center;
+                @media screen and (max-width:768px) {
+                    height: 70px ;
+                    width: 70px ;
+                    position: inherit;
+                }
+            }
+        }
+
+    }
+
+
+    #hatik-top-page{
+        height: auto;
+        width: auto;
+        max-width: 600px;
+        max-width: 800px;
+        max-height: 600px;
+        align-self: flex-end;
+     }
+
+}
+
+
+ .meduse-deux{
+    margin-top: 83px;
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+
+    img{
+        height: auto;
+        width: 100%;
+        max-width: 734.4px;
+        min-width: 200px;
+    }
+    .reverse-meduse{
+       position: relative;
+       top: 95px;
+       transform:rotateY(180deg);
+       left: 5%;
+    }
+    .meduse-right{
+        position: relative;
+        top: 0px;
+        right: 8%;
+    }
+
+}
+
+.decouvir-album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 35px;
+    color: white;
+    scroll-behavior: smooth;
+
+    h2{
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 55pt;
+        @media screen and (max-width:768px) {
+            font-size: 45pt;
+        }
+    }
+    p{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        font-size: 13pt;
+        padding: 10px;
+        @media screen and (max-width:768px) {
+            font-size: 11pt;
+        }
+    }
+    img{
+        width: 395px;
+        height: 281px;
+    }
+    :last-child{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:768px) {
+            height: 70px ;
+            width: 70px ;
+         }
+    }
+}
+
+.meduse-trois{
+    @extend .meduse-deux;
+    margin-top: 0;
+    margin-bottom: 450px;
+    position: relative;
+    scroll-behavior: smooth;
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 200px;
+    }
+    img{
+        height: auto;
+        width: 100%;
+    }
+    .meduse-three{
+        position: absolute;
+        top: 400px;
+        left: 40%;
+        height: auto;
+        max-width: 50%;
+        @media screen and (max-width:768px) {
+            top: 200px;
+        }
+    }
+
+}
+
+.ecouter-album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-behavior: smooth;
+
+    div{
+        h2{
+            font-family: 'Oswald';
+            font-weight: bold;
+            font-size: 55pt;
+            text-align: center;
+            padding: 35px;
+            @media screen and (max-width:768px) {
+                font-size: 45pt;
+            }
+        }
+        p{
+            font-family: 'Montserrat';
+            font-weight:400;
+            font-size: 18pt;
+            text-align: center;
+        }
+
+    }
+    .streaming{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            img{
+                margin-bottom: 20px;
+            }
+        }
+        img{
+            height: 26px;
+        }
+        #deezer{
+            width: 130px;
+        }
+        #spotify{
+            width: 87px;
+        }
+        #apple-music{
+            width: 110px;
+            filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+        }
+        a{
+            margin: 0 59px;
+        }
+    }
+
+    #fenetre-apple-music{
+        margin-top: 91px;
+    }
+    >:last-child{
+        margin-top: 67px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:768px) {
+            height: 70px ;
+            width: 70px ;
+        }
+    }
+}
+
+.boutique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-behavior: smooth;
+
+    h2{
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 55pt;
+        text-align: center;
+        padding: 35px;
+        @media screen and (max-width:768px) {
+            font-size: 45pt;
+        }
+    }
+    .hatik-bershka{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 111px;
+
+        img{
+            width: 121px;
+            height: 97px;
+        }
+        #croix{
+            position: relative;
+            height: 70px;
+            width: 70px;
+            &::before{
+                background: white;
+                position: absolute;
+                display:block;
+                content:'';
+                width: 70%;
+                height: 6%;
+                top: 47%;
+                left: 15%;
+                transform: rotate(250deg);
+            }
+            &::after{
+                background: white;
+                position: absolute;
+                display:block;
+                content:'';
+                width: 6%;
+                height: 70%;
+                left: 47%;
+                top: 15%;
+                transform: rotate(15deg);
+            }
+        }
+        :last-child{
+            width: 172px ;
+            height: 38px;
+            filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+        }
+    }
+    article {
+        text-align: center;
+        margin-bottom: 152px;
+        @media screen and (max-width:768px) {
+            margin-bottom: 100px ;
+        }
+        p{
+        color: white;
+        font-size: 18pt;
+        font-weight: 400;
+        font-family: 'Montserrat',sans-serif;
+        margin-bottom: 10px;
+        padding: 10px;
+        @media screen and (max-width:768px) {
+            font-size: 11pt;
+        }
+        }
+    }
+    .photo-hatik-bershka{
+        margin-bottom: 154px;
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width:768px) {
+            width: 257px;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            margin: auto;
+            scrollbar-width: none;
+            margin-bottom: 50px;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
+            >figure{
+                scroll-snap-align:  start;
+            }
+
+        }
+
+    }
+        figure{
+            margin-left: 48px;
+            color: white;
+            @media screen and (max-width:768px) {
+                width: 257px;
+                overflow-x: auto;
+                flex-shrink: 0;
+                margin-left: 0;
+            }
+            figcaption{
+                font-family: "Oswald";
+                font-size: 18pt;
+                font-weight:700;
+                span{
+                    font-family: "Montserrat";
+                    font-weight: 400;
+                    font-size: 18pt;
+                }
+            }
+            img{
+                max-width: 257px;
+                width: auto;
+                height: 444px;
+            }
+        }
+
+
+    button{
+        background-color: transparent;
+        border: 5px solid white;
+        color: white;
+        padding: 5px 120px;
+        font-family: 'Oswald';
+        font-weight: 600;
+        font-size: 18pt;
+        margin-bottom: 113px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.bottom-image{
+    img{
+        width: 100%;
+    }
+}
+
+.none{
+    display: none !important;
+}

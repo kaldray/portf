@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope[wght].woff2");
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@theme {
+  --font-display: "Manrope", "sans-serif";
+}

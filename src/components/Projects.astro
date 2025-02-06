@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+import ExternalLink from "../components/svg/TablerExternalLink.astro";
+const allProjects = await getCollection("project");
+---
+
+<section class="my-10">
+  <h2 class="font-display text-2xl font-semibold my-5">Projets</h2>
+  {
+    allProjects.map((data) => {
+      return (
+        <>
+          <article class="flex flex-col gap-1.5">
+            <a
+              class="text-lg font-medium underline underline-offset-2 decoration-1 group inline-flex items-center gap-1.5 w-max"
+              href={data.data.project_link}
+            >
+              {data.data.title}
+              <ExternalLink class="motion-safe:group-hover:animate-bounce" />
+            </a>
+            <p class="text-md font-normal text-balance">{data.body}</p>
+            <a
+              class="text-sm font-normal text-md underline underline-offset-2 decoration-1 group inline-flex items-center gap-1.5 w-max"
+              href={data.data.repository_link}
+            >
+              Lien vers le dépôt
+              <ExternalLink class="motion-safe:group-hover:animate-bounce" />
+            </a>
+          </article>
+        </>
+      );
+    })
+  }
+</section>
