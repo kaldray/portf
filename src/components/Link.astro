@@ -1,0 +1,23 @@
+---
+import ExternalLink from "./svg/TablerExternalLink.astro";
+interface Props {
+  href: string;
+  children: any;
+  className?: string;
+}
+const { href, className } = Astro.props;
+---
+
+<a
+  class:list={[
+    "text-sm font-medium underline underline-offset-2 decoration-1 group inline-flex items-center gap-1.5 w-max",
+    [className],
+  ]}
+  target="_blank"
+  href={href}
+>
+  <slot />
+  <slot name="icon">
+    <ExternalLink slot="icon" class="motion-safe:group-hover:animate-bounce" />
+  </slot>
+</a>

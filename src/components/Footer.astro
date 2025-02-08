@@ -1,6 +1,8 @@
 ---
 import Copyright from "./svg/Copyright.astro";
-import ExternalLink from "../components/svg/TablerExternalLink.astro";
+import Link from "../components/Link.astro";
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="my-10 border-t pt-10">
@@ -8,16 +10,12 @@ import ExternalLink from "../components/svg/TablerExternalLink.astro";
     class="flex sm:flex-row flex-col sm:justify-between items-center gap-1.5"
   >
     <span class="inline-flex items-center gap-1.5 text-sm"
-      >Copyright <Copyright fill="dark:fill-white" /> 2025 - Jordray KALENGA</span
+      >Copyright <Copyright fill="dark:fill-white" />
+      {year} - Jordray KALENGA</span
     >
     <span class="text-sm">
-      Inspiré de : <a
-        class="text-sm font-medium underline underline-offset-2 decoration-1 group inline-flex items-center gap-1.5 w-max"
-        href="https://fredkiss.dev/"
-        >https://fredkiss.dev/ <ExternalLink
-          class="motion-safe:group-hover:animate-bounce"
-        />
-      </a>
+      Inspiré de :
+      <Link href="https://fredkiss.dev/"> https://fredkiss.dev/ </Link>
     </span>
   </div>
 </footer>
